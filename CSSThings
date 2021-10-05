@@ -1,0 +1,30 @@
+Cascading Style Sheets;
+Usar devdocs.io es buena idea
+Poner un style dentro de un tag de html se llama inline css
+<body style="background-color: blue;">
+Site para buscar colores https://colorhunt.co/
+Esto se pone en <head>
+  <style>
+    body{                           //elijo el tag que quiero afectar, abro {
+      background-color: #E3FDFD;    //elijo el atributo afectado + : y debe terminar en ;
+    }                               //cierro }
+  </style>
+  
+  Tags que se repiten varias veces en el code:
+  <style>
+    hr{
+      background-color: white;
+    }
+  </style>
+  No funciona porque el navegador por defecto estiliza algunos elementos.
+  https://www.w3schools.com/cssref/css_default_values.asp
+  Para que funcione, hay que sobreescribir el atribute
+<style>
+    hr{
+      background-color: white;
+      border-style: none;           //borra el estilo del borde, pero no deja color porque solo el borde tenia altura por default, para eso modificamos el height;
+      height: 3.5px;
+      width: 100px;
+    }
+  </style>
+  Para hacerlo mas responsive a diferentes dispositivos, no es bueno utilizar valores fijos como px, sino usar %
