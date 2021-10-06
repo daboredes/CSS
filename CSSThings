@@ -3,7 +3,7 @@ Usar devdocs.io es buena idea
 Poner un style dentro de un tag de html se llama inline css
 <body style="background-color: blue;">
 Site para buscar colores https://colorhunt.co/
-Esto se pone en <head>
+Esto se pone en <head> y se llama Internal CSS
   <style>
     body{                           //elijo el tag que quiero afectar, abro {
       background-color: #E3FDFD;    //elijo el atributo afectado + : y debe terminar en ;
@@ -28,3 +28,52 @@ Esto se pone en <head>
     }
   </style>
   Para hacerlo mas responsive a diferentes dispositivos, no es bueno utilizar valores fijos como px, sino usar %
+/* */ Comentarios en css
+
+Lo que tiene hacer Internal CSS, es que solo se aplica a la .html donde pongas en codigo, entonces para eso está el External CSS. 
+Se crea una nueva carpeta con un nuevo archivo styles.css para que el navegador lo reconozca como archivo css.
+Se borra el tag style de head en las paginas, y se pone un nuevo tag que se llama link, con rel="stylesheet" hsref="css/styles.css". Dentro de styles.css no va el tag styles
+
+El orden de prioridades es Inline>Internal>External.
+
+
+Sintaxis de css:
+
+selector{
+  property: value;
+ }
+ Se recomienda ordenar alfabeticamente las properties.
+ 
+Si el selector es generico, afecta a todos esos elementos. Para hacerlos especificos se usan los class selectors, agregando un class attribute que permite diferenciar los elementos de html
+class selector: 
+
+.nombreClass{
+  property: value;
+ }
+ 
+ Prioridad class>tag
+ 
+id Selector attribute id="nombre"
+#heading{
+  color: blue;
+ }
+ 
+ Prioridad id>tag
+ Los ID no se puede repetir, por eso no pueden ser genericos.
+ 
+ Se puede usar mas de un class por elemento: class="broccoli circular";
+ .broccoli hace algo,
+ .circular otra cosa.
+ No funciona con id, es super especifico.
+ 
+ Pseudo class, cuando te desplazas (hover) sobre un tag, cambia.
+ El más usado es :hover, por ejemplo img es un tag, pero img:hover es otro
+ 
+img:hover {
+  background-color: gold;
+} /*esto es un pseudo class, cambia cuando, en este caso, deslizo el mouse*/
+  
+ 
+ 
+ 
+ 
