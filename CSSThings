@@ -74,6 +74,9 @@ img:hover {
 } /*esto es un pseudo class, cambia cuando, en este caso, deslizo el mouse*/
   
  
- 
- 
- 
+ En la consola de chrome, en la parte de styles, se puede codear sin que se guarde, para ver como quedarian los cambios 
+ Se puede jugar con los bordes del body en la consola, supongo que con todos los elementos tambien.
+ El responsable de que haya un margen superior que no se puede cambiar no es el body, sino el default del h1.
+
+Cuando pones 0 en un value, no tenes porque especificar la unidad.
+
