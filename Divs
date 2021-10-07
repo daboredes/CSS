@@ -1,0 +1,10 @@
+Div es un elemento para dividir el contenido de la web, para estructurar cada div por separado.
+Los div no hacen nada sin css.
+La idea es separar contenido con divs, para manipular cada bloque por separado.
+body {
+  margin: 0;
+} //setea los margenes del body en 0, todos.
+div {
+  background-color: #e4f9f5;
+  margin-top: 0; //este margen es el que impide que el div llegue al inicio de la pagina.
+}
