@@ -1,0 +1,16 @@
+La propiedad de Dislpay (como se muestran las cosas) tiene 4 valores:
+
+1.block - bloquean todo el ancho del display, como h1, p, div lists e items y forms
+Como se puede editar solo una parte de un p? se puede usar un span dentro del p.
+Span por si solo no sirve de mucho, pero con css si.
+Se les puede setear un width.
+Tambien se les puede cambiar el display: inline para que funcione como span
+
+2.inline: bloquean solo lo que necesitan del contenido como imgs, spans y anchors
+No se les puede setear un width.
+Se les puede cambiar el display: block, pero no quedan en linea, funcionan como bloque.:
+<span display: block>hello</span>
+<span display: block>world</span>
+
+3.inline-block: combina ambas propiedades, se puede cambiar el width y bloquean las lineas.
+display: inline-block;
