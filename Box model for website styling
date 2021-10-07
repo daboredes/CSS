@@ -1,0 +1,9 @@
+Viewport es la pantalla donde estas viendo la web.
+El borde de un elemento va a tener ancho propio, o sea, un div de 300 con borde 3, va a sumar 303, y no 300.
+Cada lado del borde puede tener un ancho distinto: 
+div{
+  border-width: 0px 10px 20px 30px;
+} va en sentido del reloj
+Un div con contenido, va a tener el tamanio justo para contener ese contenido. Para separar el borde del contenido, existe el padding. El padding aumenta el tamanio del div
+El margin es si la distancia entre los bordes del div y otros elementos.
+Para que aparezca el border solid 10px por ejemplo.
