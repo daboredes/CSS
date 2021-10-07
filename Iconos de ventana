@@ -1,0 +1,5 @@
+Los favicons son los iconos que aparecen en la pestania.
+Pueden ser imagenes, o se pueden crear en favicon.cc
+Deben tener formato .ico
+Va en head con link:
+<link rel="icon" href="inserte ruta de la imagen o url">
