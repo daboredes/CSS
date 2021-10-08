@@ -1,0 +1,17 @@
+Hay dos grandes familias de fuentes en CSS:
+1. Serif: mas estilizadas, formales y elegantes.
+2. Sans-serif: lineas claras, modernas y minimalistas.
+Las fuentes cambian mucho la distribucion de la pagina, ojo con eso.
+La propiedad de fuente en css es font-family: y hay 5 familias, se usan por lo general 3, Serif, Sans-Serif y Monospace, donde caracter usa el mismo ancho para cada caracter.
+Serif viene por default.
+Para cambiar la fuente, dentro de la familia: 
+body{
+  font-family: "nombre de la fuente", sans-serif;
+}
+https://www.w3schools.com/cssref/css_websafe_fonts.asp pagina para ver las fuentes mas seguras, porque si el navegador no tiene instalada la fuente, usa la que trae por defecto.
+Para evitar que no cargue, se usan fallbacks: stackear diferentes fuentes en el font-family: para que carguen a medida que no esten disponibles.
+https://www.cssfontstack.com/ es un lugar donde podes copiar los fallbacks
+https://css-tricks.com/css-basics-fallback-font-stacks-robust-web-typography/
+Si quiero que solo se vea la fuente que yo elegi, y no haya fallbacks, se usan los fonts embeding: https://fonts.google.com/
+Elegis los tipos de fuente, y los copias en el head de la pagina. Esto hace que el usuario que entre a la pagina descargue la fuente antes (no es optimo supongo)
+Luego copias los css rules to specify families, en css. Para el body, header, h1, etc;
