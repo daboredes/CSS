@@ -12,5 +12,36 @@ Se les puede cambiar el display: block, pero no quedan en linea, funcionan como 
 <span display: block>hello</span>
 <span display: block>world</span>
 
+en codepen.io ver como se comportan:
+<p>hello</p>
+<p>world</p>
+<span>hello</span>
+<span>world</span>
+p{
+  background-color: red;
+  width: 100px;
+  display: inline-block;
+}
+span{
+  background-color: blue;
+  width: 100px;
+  display: block;
+}
+
 3.inline-block: combina ambas propiedades, se puede cambiar el width y bloquean las lineas.
 display: inline-block;
+Las imagenes se comportan como inline-block por default porque podemos cambiar el heigth y width como querramos.
+
+4. none: elimina el elemento directamente.
+Hay dos formas de ocultar elementos:
+  1. display: none; Hace como si no existiera el elemento, y los demas lo ignoran
+  2. visibility: hidden; lo vuelve invisible, pero los demas elementos no lo ignoran.
+  
+  .second-p{
+  background-color: green;
+  visibility: hidden;
+}
+.second-p{
+  background-color: green;
+  display: none;
+}
