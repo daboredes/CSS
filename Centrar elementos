@@ -1,0 +1,15 @@
+La forma mas facil de centrar elementos es usar la propiedad text-align, que tiene que ser seteada en el el parent container.
+Si queres todo centrado, entonces
+body{
+  text-align: center;
+}
+Esto funciona mientras tengas elementos que esten seteados con display:inline-block (por ejemplo h1 y p por defecto)
+Pero si por ejemplo tu h1 esta seteado con un width: 10%; deja de funcionar.
+
+La otra forma de centrar, es usar margin: 0 auto 0 auto;
+/*margin: X es para todos los margenes;
+/*margin: X Y es para vertical horizontal;
+/*margin: X Y Z es para top horizontal bottom
+/*margin: X Y Z A es para top, right, bottom, left
+/*
+auto centra vertical y horizontalmente. entonces en ese orden es centrado a la izquierda, 0 arriba, centrado derecha, 0 abajo.
