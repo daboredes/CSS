@@ -1,0 +1,57 @@
+Propiedad position:
+
+1. Static: todos los elementos de html son static por default. Si se define, se utiliza la posicion por default de html.
+
+2. Relative: Permite posicionarla de forma relativa a donde estaria por defecto:
+.mountain {
+  position: relative;
+  left: 20px;
+} va a correr la imagen 20px a la izquierda de donde estaria. se puede usar %.
+Solo cambiando la posicion no hace nada, es necesario especificar que coordenada y que valor queres cambiar.
+Son 4 coordenadas, left, top, right, bottom.
+Cosas a tener en cuenta: Superpone los demas elementos, no los corre.
+
+3. Absolute: 
+.div{
+  position: relative;
+ }
+ .img{
+  position: absolute;
+  right: 30px;
+ }
+ Corre el elemento contenido respecto a la posicion del padre. En ese caso, va a mover la imagen 30px hacia la izquierda del margen derecho del div, no de su propio margen.
+ O sea, agregas un margen al elemento, respecto de donde esta el padre.
+ Afecta el orden de los elementos, es decir, se van a correr los demas elementos del html.
+ Challenge:
+<div class='red'></div>
+<div class='blue'></div>
+<div class='yellow'></div>
+
+.red{
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  position: absolute;
+  left: 200px;
+  top: 200px;
+}
+.blue{
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+.yellow{
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}//la otra es setear los margenes del body en 0.
+
+4. Fixed:
+Esto hace que el elemento quede fijo en la pantalla, por mas que scrolles.
+Esto es super util para barras que no queres que se muevan.
