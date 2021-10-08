@@ -11,7 +11,7 @@ Solo cambiando la posicion no hace nada, es necesario especificar que coordenada
 Son 4 coordenadas, left, top, right, bottom.
 Cosas a tener en cuenta: Superpone los demas elementos, no los corre.
 
-3. Absolute: 
+3. Absolute: /*el parent container tiene que estar seteado en relative.
 .div{
   position: relative;
  }
