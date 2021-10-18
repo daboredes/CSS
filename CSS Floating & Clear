@@ -1,0 +1,19 @@
+Para que un texto envuelva una imagen:
+.webDev-img {
+  width: 25%;
+  float: left;
+}
+Lo que hace es que la imagen va a estar a la izquierda del texto. Esto debe funcionar solo si estan dentro del mismo div me imagino.
+The float property can have one of the following values:
+
+left - The element floats to the left of its container
+right - The element floats to the right of its container
+none - The element does not float (will be displayed just where it occurs in the text). This is default
+inherit - The element inherits the float value of its parent
+
+Clear lo que hace es negar el float del elemento:
+.skill-description {
+  clear: left;
+}
+
+La idea de estas propiedades es que solo se usen para wrapear texto, no para posicionar elementos.
