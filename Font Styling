@@ -15,3 +15,16 @@ https://css-tricks.com/css-basics-fallback-font-stacks-robust-web-typography/
 Si quiero que solo se vea la fuente que yo elegi, y no haya fallbacks, se usan los fonts embeding: https://fonts.google.com/
 Elegis los tipos de fuente, y los copias en el head de la pagina. Esto hace que el usuario que entre a la pagina descargue la fuente antes (no es optimo supongo)
 Luego copias los css rules to specify families, en css. Para el body, header, h1, etc;
+
+FONT SIZE
+
+es una propiedad: font-size:
+
+Los navegadores tienen por default un size para los elementos, entonces si pones un valor en px puede que no cambien.
+Para eso se pueden usar %, y 100% son 16px, entonces se hace una regla de 3. Si queres un h1 de 90px=>100%_16px...90px_562.5%
+Otra forma de elegir el size, es usar el valor em que equivale a 16px. Entonces 90px equivalena a 5.625em
+Usar dynamic values hace que se ajusten los tamanios en caso de cambiar el zoom.
+Lo que tiene es que si yo defino un h1, y antes habia definido el font size del parent que lo contiene, entonces hereda el font size del parent, y encima le 
+aplica el font size del h1. Esto se llama inherit a property. Si los values se dejan estaticos (px) entonces no se hereda.
+Para ignorar el seteo del parent, css3 tiene lo que se llama root em (rem).
+Lo mas recomendable seria usar rem para cambiar el size.
