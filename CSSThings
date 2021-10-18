@@ -80,3 +80,9 @@ img:hover {
 
 Cuando pones 0 en un value, no tenes porque especificar la unidad.
 
+line-height: es el interlineado entre textos. el value elegido multiplica lo normal:
+body{
+  line-height: 2; //multiplica por dos el espacio entre lineas.
+ }
+ 
+ font-weight: define el grosor de la fuente, siendo 100 el mas fino y 900 el mas ancho. 500 es el normal
