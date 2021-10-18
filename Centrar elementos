@@ -12,4 +12,4 @@ La otra forma de centrar, es usar margin: 0 auto 0 auto;
 /*margin: X Y Z es para top horizontal bottom
 /*margin: X Y Z A es para top, right, bottom, left
 /*
-auto centra vertical y horizontalmente. entonces en ese orden es centrado a la izquierda, 0 arriba, centrado derecha, 0 abajo.
+auto centra vertical y horizontalmente. entonces en ese orden es 0 arriba, centrado derecha, 0 abajo, centrado a la izquierda.
