@@ -1,0 +1,8 @@
+hr {
+  background-color: none;
+  border-style: dotted none none; /* Es importante la sintaxis, si solo se define uno, aplica para los cuatro bordes, y asi sucesivamente - Existe tambien el border-top-style, y dejas border-style: none*/
+  height: 0px; /*Para que quede solo la linea o se borra*/
+  width: 5%; /*30% del largo total del ancho*/
+  border-color: rgb(216, 216, 216); /*cambia el color del borde*/
+  border-width: 5px; /*cambia el tamanio del borde, en este caso el punto*/
+}
