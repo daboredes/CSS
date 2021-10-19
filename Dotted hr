@@ -6,3 +6,13 @@ hr {
   border-color: rgb(216, 216, 216); /*cambia el color del borde*/
   border-width: 5px; /*cambia el tamanio del borde, en este caso el punto*/
 }
+
+Este es el borde que uso en la pagina del challenge:
+.hr {
+  background-color: none;
+  border-style: dotted none none;
+  height: 0;
+  width: 4.5vw;
+  border-color: rgb(216, 216, 216);
+  border-width: 0.5vw;
+}
